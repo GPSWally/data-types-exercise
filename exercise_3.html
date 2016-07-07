@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*
+		* Why does the following print NaN?
+		* How could we fix the following so that it prints 3?
+		*/
+
+		var a;
+		console.log(a);
+		a = a + 3;
+
+		console.log(a);
+		/*
+			with this the variable a is undefined, and then doing an addition (not concatination) operation on an undefined variable, so it changes a to a number.  A is now a number variable but it is not defined so it prints out as a NaN. 
+			Fix by setting var a = 0.
+		*/
+
+	</script>
+</body>
+</html>

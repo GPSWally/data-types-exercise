@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		/*
+		* Exercise Two
+		* Why does the following output true?
+		*/
+
+		var a = "false";
+		var b = true;
+
+		console.log(a)
+		console.log(b)
+
+		// "&&" is "and"
+		console.log (a && b);
+		/* 
+			a is a string set to a value of "false" but it is truthy as any string that is not empty is true.  b is defined as true.  So a is true and b is true, so a and b is true.
+		*/
+		console.log (b && a);
+		/*
+		* Bonus Question: Why does (b && a) log "false"?
+		*/
+		/*
+			Unsure...a guess...I know it's printing the value of a, not the boolean of a but I don't know why....
+
+			It's called short circuiting.  && returns the first false value (because the statement is false) or the last value.  || returns the first truth value or the last value, which would mean the statement is true.
+		*/
+
+		
+	</script>
+</body>
+</html>
